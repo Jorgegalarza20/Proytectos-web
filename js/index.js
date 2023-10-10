@@ -1,5 +1,5 @@
 // declarar funciones
-function generarNumeroAlAzar(min, max) {
+function numerosAlAzar(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -12,7 +12,7 @@ function pedirCantidad() {
 function generarArray(cantidad) {
   const arrayInterno = [];
   for (let i = 0; i < cantidad; i++) {
-    arrayInterno.push(generarNumeroAlAzar(10, 99));
+    arrayInterno.push(numerosAlAzar(10, 99));
   }
   return arrayInterno;
 }
